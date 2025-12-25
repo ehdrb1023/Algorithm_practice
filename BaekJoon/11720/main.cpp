@@ -17,7 +17,7 @@ int main(void) {
         sum += str[i] - '0';
     }
 
-    cout << sum;
+    cout << sum << "\n";
 
     return 0;
 }
