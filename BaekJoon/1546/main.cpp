@@ -9,23 +9,22 @@ int main() {
 
     int N = 0;
     cin >> N;
-    double* score = new double(N);
+    int A[1000];
 
     for (int i = 0; i < N; i++) {
-        cin >> score[i];
+        cin >> A[i];
     }
 
     double sum = 0;
     double max = 0;
 
     for (int i = 0; i < N; i++) {
-        if (score[i] > max) {
-            max = score[i];
+        if (A[i] > max) {
+            max = A[i];
         }
-        sum += score[i];
+        sum += A[i];
     }
 
     double result = sum * 100.0 / max / N;
     cout << result << "\n";
-    delete[] score;
 }
